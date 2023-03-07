@@ -1,0 +1,5 @@
+# Ignore SDWebImage library
+Pods/
+!Pods/Pods.xcodeproj/
+!Pods/Pods.xcworkspace/
+Pods/**/SDWebImage/
