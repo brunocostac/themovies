@@ -21,6 +21,7 @@ Aplicativo para dispositivo iOS (Swift) que consome o JSON exposto pela API do T
 * Procure pela linha static let key = "your_api_key_here" dentro da struct API_KEY to The Movies.
 * Substitua a string "your_api_key_here" pela sua própria API key.
 
+* E não esqueça também de dar um pod install na pasta The Movies para instalar o SDWebimage
 
 
 ## Especificações de desenvolvimento
