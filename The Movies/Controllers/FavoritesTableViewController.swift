@@ -45,7 +45,7 @@ class FavoritesTableViewController: UITableViewController, UISearchBarDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        self.navigationController?.navigationBar.topItem?.title = "The Movie"
+        self.navigationController?.navigationBar.topItem?.title = "The Movies"
         self.setupTableView()
         self.setupSearchBar()
         self.setupKeyboard()

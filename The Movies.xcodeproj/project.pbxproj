@@ -160,6 +160,7 @@
 		116647BB298486CF00ADE3C1 /* The Movies */ = {
 			isa = PBXGroup;
 			children = (
+				119A2F3029BBAB8700F2E244 /* Screenshots */,
 				1127972C298B05CC002FCD79 /* Helper */,
 				1171D1D729880C5200C44062 /* Utils */,
 				114995402987F12F0040B046 /* Services */,
@@ -248,6 +249,13 @@
 				11D320E4298A85E700553613 /* FavoritesTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		119A2F3029BBAB8700F2E244 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screenshots;
 			sourceTree = "<group>";
 		};
 		4FDB427F9A5C250CD02434EB /* Frameworks */ = {

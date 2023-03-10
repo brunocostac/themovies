@@ -29,7 +29,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.topItem?.title = "The Movie"
+        self.navigationController?.navigationBar.topItem?.title = "The Movies"
         view.backgroundColor = .white
         self.showSpinner()
         self.setupCollectionView()
