@@ -75,13 +75,12 @@ class FavoritesTableViewController: UITableViewController, UISearchBarDelegate {
     
     private func setupSearchBar() {
         searchBar.delegate = self
-        searchBar.placeholder = "Nome do filme"
+        searchBar.placeholder = "Film's name"
         searchBar.sizeToFit()
     }
     
     func getMovies() {
         FavoriteManager().fetchAll(completion: { movie, error in
-            
             if let movie = movie {
                 self.favoriteMovies = movie
                 DispatchQueue.main.async {
