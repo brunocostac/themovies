@@ -46,6 +46,7 @@ class FavoritesTableViewController: UITableViewController, UISearchBarDelegate {
         super.viewDidLoad()
         view.backgroundColor = .white
         self.navigationController?.navigationBar.topItem?.title = "The Movies"
+        overrideUserInterfaceStyle = .light
         self.setupTableView()
         self.setupSearchBar()
         self.setupKeyboard()
@@ -75,7 +76,7 @@ class FavoritesTableViewController: UITableViewController, UISearchBarDelegate {
     
     private func setupSearchBar() {
         searchBar.delegate = self
-        searchBar.placeholder = "Film's name"
+        searchBar.placeholder = "Name of the movie"
         searchBar.sizeToFit()
     }
     
@@ -114,10 +115,12 @@ class FavoritesTableViewController: UITableViewController, UISearchBarDelegate {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if isFiltering {
             if self.filteredMovies.count == 0 {
+                self.searchBar.isHidden = true
                 self.tableView.setEmptyView(title: "No movies with this name were found.", message: "", messageImage: UIImage(systemName: "magnifyingglass.circle")!)
             }
             return filteredMovies.count
         } else if self.favoriteMovies.count == 0 {
+            self.searchBar.isHidden = true
             self.tableView.setEmptyView(title: "You do not have any favorites yet.", message: "", messageImage: UIImage(systemName: "star.circle")!)
         } else {
             self.tableView.backgroundView = nil
